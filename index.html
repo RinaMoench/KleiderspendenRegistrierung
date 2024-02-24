@@ -9,19 +9,11 @@
             Clothes2where Kleiderspenden mit Zielauswahl <!--Titel der Seite-->
         </title>
         <!--Bootstrap und JavaScript Einbindung-->
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="css\bootstrap.css">
         <script src="js\bootstrap.bundle.js"></script>
         <!--Media Queries für Desktop, Tablet und Handy-->
-        @media screen and(min-width: 1024px){
-
-        }
-        @media screen and(min-width 768px) and(max-width:1023px){
-
-        }
-        @media screen and(max-width 767px){
-        main { display:block; }
-        main nav, main div#content { width: 100%; }
-        }
+        
         <!--Breakpoints-->
         <div class="row">
             <div class="col-lg–4 col-sm–12">
@@ -59,25 +51,25 @@
         </header>
     <!--Content-Bereich-->  
     <main>
+        <section>
         <h1>Spende registrieren</h1>
 
         <p>Auf dieser Seite kannst du deine Kleiderspende registrieren.</p>
 
-        <!--Formular einbauen-->
-
+        </section>
+    <!--Formular einbauen-->
     </main>
     <!--Footer-Bereich mit rechtlichen Hinweisen-->
-    <footer>
-        <nav>
-            <ul>
-                <li>
-                    <a href="datenschutz.html">Datenschutz</a>
-                </li>
-                <li>
-                    <a href="impressum.html">Impressum</a>
-                </li>
-            </ul>
-        </nav>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+                <a class="nav-link px-2 text-body-secondary" href="datenschutz.html">Datenschutz</a>
+            </li>
+            <li>
+                <a class ="nav-link px-2 text-body-secondary" href="impressum.html">Impressum</a>
+            </li>
+        </ul>
+        <p class="text-center text-body-secondary" © 2024 Company, Inc></p>
     </footer>
     </body>
 </html>
