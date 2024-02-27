@@ -10,6 +10,23 @@ main { display:block; }
 main nav, main div#content { width: 100%; }
 }
 
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+
+.hero {
+  background-color: #074f57;
+  background-image: url("../images/cabinet-1853504_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
+}
+
   header { background-color: #afa; }
   header nav ul { text-align: right; }
   header nav ul li { display: inline; }
