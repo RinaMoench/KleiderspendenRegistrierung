@@ -13,6 +13,7 @@ main nav, main div#content { width: 100%; }
 body {
   margin: 0;
   font-family: system-ui;
+  padding: 1em;
 }
 
 .hero {
