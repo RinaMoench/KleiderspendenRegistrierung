@@ -98,17 +98,21 @@
         <!--Formular Auswahl Krisengebiet per Dropdown-->
         <div>
             <p>In welches Krisengebiet möchtest du deine Kleidung spenden?</p>
-            <form>
-
-            </form>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Wähle ein Krisengebiet aus</option>
+                <option value="1">Ukraine</option>
+                <option value="2">Afghanistan</option>
+                <option value="3">Syrien</option>
+              </select>
         </div>
         <!--Formular Eingabe Name/Vorname-->
-        <div>
-            <form>
-                <label for="vorname">Vorname:</label><br>
-                <input type="text" id="vorname" name="vorname"><br>
-                <label for="nachname">Nachname:</label><br>
-                <input type="text" id="nachname" name="nachname"></form>
+        <div class="row">
+            <div class="col">
+                    <input type="text" class="form-control" placeholder="Vorname" aria-label="First name">
+            </div>
+            <div class="col">
+                    <input type="text" class="form-control" placeholder="Nachname" aria-label="Last name">   
+            </div>
         </div>
     </section>
     </main>
