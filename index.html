@@ -70,6 +70,7 @@
             <header>Kleiderspenden Registrierung</header>
             <div class="form-outer">
                 <form action="#">
+
                     <div class="page">
                         <div class="title">
                             Welche Art von Kleidung möchtest du spenden?
@@ -122,39 +123,66 @@
                             </div>
                             <input type="checkbox" id="kleidung8" name="Kleidung8" value="Sonstiges">
                         </div>
+                    <!--Formular Auswahl Krisengebiet per Dropdown-->
+                        <div class="title">
+                            In welches Krisengebiet möchtest du deine Kleidung spenden?
+                        </div>
+                        <div>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Wähle ein Krisengebiet aus</option>
+                                <option value="1">Ukraine</option>
+                                <option value="2">Afghanistan</option>
+                                <option value="3">Syrien</option>
+                              </select>
+                        </div>
+                        <div class="field">
+                            <button>Weiter</button>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">
+                            Wie möchtest du spenden?
+                        </div>
+                    <!--Formular Auswahl Abholung/Übergabe mit Radio Buttons-->
+                    <div>
+                    <p>Bitte wähle zwischen Abholung bei dir Zuhause (nur möglich im PLZ-Bereich der Geschäftsstelle) oder Übergabe an der Geschäftsstelle</p>
+                    <input type="radio" id="uebergabe" name="Auswahl" value="Uebergabe">
+                    <label for="uebergabe">Übergabe an der Geschäftsstelle</label><br>
+                    <input type="radio" id="abholung" name="Auswahl" value="Abholung">
+                    <label for="abholung">Abholung mit Sammelfahrzeug</label><br>
+                    </div>
+
+                    <div class="field btns">
+                        <button class="prev-1 prev">Zurück</button>
+                        <button class="next-1 next">Weiter</button>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">
+                            Bitte gib uns zur Zuordnung die folgenden Daten:
+                        </div>
+                        <!--Formular Eingabe Name/Vorname-->
+                        <div>
+                        <input type="text" class="form-control" placeholder="Vorname" aria-label="First name">
+                        <input type="text" class="form-control" placeholder="Nachname" aria-label="Last name"> 
+                        </div>
+                        
+                        <!--hier noch PLZ und Straße und Hausnr. Felder anlegen-->
+
+                        <div class="field btns">
+                            <button class="prev-1 prev">Zurück</button>
+                            <button class="Submit">Spenden</button>
+                        </div>
+
                     </div>
                 </form>
             </div>
         </div>        
-        <!--Formular Auswahl Abholung/Übergabe mit Radio Buttons-->
-        <div>
-            <p>Bitte wähle zwischen Abholung bei dir Zuhause oder Übergabe an der Geschäftsstelle</p>
-            <form>
-                <input type="radio" id="uebergabe" name="Auswahl" value="Uebergabe">
-                <label for="uebergabe">Übergabe an der Geschäftsstelle</label><br>
-                <input type="radio" id="abholung" name="Auswahl" value="Abholung">
-                <label for="abholung">Abholung mit Sammelfahrzeug</label><br>
-            </form>
-        </div>
-        <!--Formular Auswahl Krisengebiet per Dropdown-->
-        <div>
-            <p>In welches Krisengebiet möchtest du deine Kleidung spenden?</p>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Wähle ein Krisengebiet aus</option>
-                <option value="1">Ukraine</option>
-                <option value="2">Afghanistan</option>
-                <option value="3">Syrien</option>
-              </select>
-        </div>
-        <!--Formular Eingabe Name/Vorname-->
-        <div class="row">
-            <div class="col">
-                    <input type="text" class="form-control" placeholder="Vorname" aria-label="First name">
-            </div>
-            <div class="col">
-                    <input type="text" class="form-control" placeholder="Nachname" aria-label="Last name">   
-            </div>
-        </div>
+        
+        
+        
+        
     </section>
     </main>
     <!--Footer-Bereich mit rechtlichen Hinweisen-->
