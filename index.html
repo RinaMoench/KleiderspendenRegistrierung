@@ -20,7 +20,7 @@
     <body>
         <header>
             <div class="hero">
-                <div class="container">
+                <div class="container-fluid">
                     <!--Navigationsleiste-->
                     <nav class="navbar fixed-top border-bottom border-body">
                         <div class="container-fluid">
@@ -55,51 +55,77 @@
     <!--Content-Bereich-->  
     <main>
         <section>
-        <div class="row">
-            <h1 class="text-center">Spende registrieren</h1>
-        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-center">Spende registrieren</h1>
+                    </div>
+                </div>
+            </div>
     </section>
     <!--Formular einbauen-->
     <section>
         <!--Formular Auswahl Art der Kleidung mit Checkboxen-->
-        <div class="row">
-            <div class="col-5 ms-5 mt-3 ps-3">
-            <p>Welche Art von Kleidung möchtest du spenden?</p>
+        <div class="container">
+            <header>Kleiderspenden Registrierung</header>
+            <div class="form-outer">
+                <form action="#">
+                    <div class="page">
+                        <div class="title">
+                            Welche Art von Kleidung möchtest du spenden?
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Schuhe
+                            </div>
+                            <input type="checkbox" id="kleidung1" name="Kleidung1" value="Schuhe">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Hosen
+                            </div>
+                            <input type="checkbox" id="kleidung2" name="Kleidung2" value="Hosen">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Jacken
+                            </div>
+                            <input type="checkbox" id="kleidung3" name="Kleidung3" value="Jacken">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                T-Shirts
+                            </div>
+                            <input type="checkbox" id="kleidung4" name="Kleidung4" value="Tshirts">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Pullover
+                            </div>
+                            <input type="checkbox" id="kleidung5" name="Kleidung5" value="Pullover">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Baby-Kleidung
+                            </div>
+                            <input type="checkbox" id="kleidung6" name="Kleidung6" value="Baby-Kleidung">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Überjacken
+                            </div>
+                            <input type="checkbox" id="kleidung7" name="Kleidung7" value="Ueberjacken">
+                        </div>
+                        <div class="field">
+                            <div class="label">
+                                Sonstige Kleidung
+                            </div>
+                            <input type="checkbox" id="kleidung8" name="Kleidung8" value="Sonstiges">
+                        </div>
+                    </div>
+                </form>
             </div>
-                <div>
-                    <input type="checkbox" id="kleidung1" name="Kleidung1" value="Schuhe">
-                    <label for="kleidung1">Schuhe</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung2" name="Kleidung2" value="Hosen">
-                    <label for="kleidung2">Hosen</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung3" name="Kleidung3" value="Jacken">
-                    <label for="kleidung3">Jacken</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung4" name="Kleidung4" value="Tshirts">
-                    <label for="kleidung4">T-Shirts</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung5" name="Kleidung5" value="Pullover">
-                    <label for="kleidung5">Pullover</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung6" name="Kleidung6" value="Baby-Kleidung">
-                    <label for="kleidung6">Baby-Kleidung</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung7" name="Kleidung7" value="Ueberjacken">
-                    <label for="kleidung7">Überjacken</label><br>
-                </div>
-                <div>
-                    <input type="checkbox" id="kleidung8" name="Kleidung8" value="Sonstiges">
-                    <label for="kleidung8">Sonstige Kleidung</label><br>
-                </div>
-            </div>
-        </div>
+        </div>        
         <!--Formular Auswahl Abholung/Übergabe mit Radio Buttons-->
         <div>
             <p>Bitte wähle zwischen Abholung bei dir Zuhause oder Übergabe an der Geschäftsstelle</p>
